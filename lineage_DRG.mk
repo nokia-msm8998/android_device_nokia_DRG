@@ -13,6 +13,6 @@ PRODUCT_MODEL := Nokia 6.1 Plus
 PRODUCT_NAME := lineage_DRG
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="Dragon_00WW 10 QKQ1.190828.002 00WW_4_150 release-keys" \
-    BuildFingerprint=Nokia/Dragon_00WW/DRG_sprout:10/QKQ1.190828.002/00WW_4_150:user/release-keys \
+    BuildDesc="Dragon_00WW-user 10 QKQ1.190828.002 00WW_4_15T release-keys" \
+    BuildFingerprint=Nokia/Dragon_00WW/DRG_sprout:10/QKQ1.190828.002/00WW_4_15T:user/release-keys \
     DeviceProduct=DRG_sprout
