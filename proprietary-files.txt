@@ -2,7 +2,7 @@
 ## are from DRG_sprout (QKQ1.190828.002).
 
 # Current libraries with ELF check disabled:
-# libmmcamera2_cpp_module, libmmcamera2_is, libmmcamera2_stats_lib, libmmcamera2_stats_algorithm, libmmcamera2_q3a_core, libmmcamera2_mct, libmmcamera2_imglib_modules, libmmcamera2_iface_modules, libmmcamera_interface, libmmcamera2_isp_modules, libmmcamera2_stats_modules depends on intrinsic symbols which are difficult to shim like __aeabi_d2lz, __aeabi_ldivmod, __aeabi_ul2d, etc...
+# libmmcamera2_cpp_module, libmmcamera2_is, libmmcamera2_stats_lib, libmmcamera2_stats_algorithm, libmmcamera2_q3a_core, libmmcamera2_mct, libmmcamera2_imglib_modules, libmmcamera2_iface_modules, libmmcamera2_isp_modules, libmmcamera2_stats_modules depends on intrinsic symbols which are difficult to shim like __aeabi_d2lz, __aeabi_ldivmod, __aeabi_ul2d, etc...
 
 # Audio
 vendor/lib/hw/audio.primary.sdm660.so:vendor/lib/hw/audio.primary.sdm660-nokia.so;FIX_SONAME
@@ -69,24 +69,19 @@ vendor/firmware/TFA9894_drg.ini
 
 # Camera - from 00WW_3_54H
 vendor/bin/mm-qcamera-app|2bf77fc4f057193ad83c9ded2f2ba3899ebbe1ab
-vendor/lib/hw/camera.sdm660.so|9fefef1dc97c447bbc9f0eccaaa32ec31ac96ce2|8f9de484bfccd8e757ebff30eb6610b2dcba7f07
 vendor/lib/libdepthmapwrapper.so|8d5f03354650ddea19fc8781c824fbb96105a86e
 vendor/lib/libfih_camera_effect.so|360a9dc97b27b95025860c8dc9508701f81ae5e3
 vendor/lib/libflash_dummy_flash.so|481bd2fccd85401d4834d96e8e4f78f74d37e31e
 vendor/lib/libflash_pmic.so|c016a2e78f0f4d11ae40ca6f383816b4fa4abf5c
-vendor/lib/libhal_dbg.so|17b9637d5cd37ff2b76446a355a69f9b6a66afaa
 vendor/lib/libimage_matting.so|a05558225578eddfebfbc32bddf75ac18f897708
 vendor/lib/libjpegdhw.so|21e70be964a1ce408e5a44a642787b818ef3792b
 vendor/lib/libjpegdmahw.so|90698ab1fee9a756f4e5f97d740a75664f7de649
 vendor/lib/libjpegehw.so|2e822162fa8e272cc1be5a4398761e28d7ee487f
 vendor/lib/libmm-qcamera.so|ea4fbbb07e3e0136ce2b86c54d1113249b7b39c3
 vendor/lib/libmmjpeg.so|2cad93f036b6c10d9d6057ff43a64b5adddb7433
-vendor/lib/libmmjpeg_interface.so|c464b5483b4f2b47968bf3c1b56bb874e12dcc96
-vendor/lib/libmmlib2d_interface.so|7e62ac6642962945da76b542b672e156f59b77e3
 vendor/lib/libmmqjpeg_codec.so|1f9305dba863c08832f32e07836ad79887a2dd08
 vendor/lib/libmmqjpegdma.so|8886bc324ec5ff0af83b7bf44fa04405b1ed139e
 vendor/lib/libmpbase.so|25b49173aac8551cdebd4fbfccdbcb09e0b8469d
-vendor/lib/libqomx_core.so|2f37f313f74d593b28c0231b807624419acd9fd5
 vendor/lib/libqomx_jpegdec.so|89578627bc00a41fef61b21e96d7d02b2745b978
 vendor/lib/libqomx_jpegenc.so|75b15f2a2ed8abb46dfa564eaef9878bd559b729
 vendor/lib/libqomx_jpegenc_pipe.so|9368dd446f9ec344c4e6d0fcd2005158a9aa34a8
@@ -94,15 +89,6 @@ vendor/lib/libremosaic_daemon.so|2e3e6c4a7ab42be68cc8389f4f4528efd7bd9bde
 
 # Camera (actuators) - from 00WW_3_54H
 vendor/lib/libactuator_fp5510_drg_main.so|fb4c0d1865f8c604871da32375283bec157135ee
-
-# Camera (Arcsoft) - from 00WW_3_54H
-vendor/lib/libarcsoft_beautyshot.so|92c59d4a718aff526064aa9bd1c36415e0e97d8b
-vendor/lib/libarcsoft_beautyshot_image_algorithm.so|5d62f8edd027144c254384b70bc0eb7c34ac7ba3
-vendor/lib/libarcsoft_beautyshot_video_algorithm.so|9b6b7ace5f27021e4d2563fe8dc33f3ae017f7ec
-vendor/lib/libarcsoft_dualcam_refocus_DRG.so;FIX_SONAME|746d8b9123bfd68bbe9988498a0c15fc9d233149
-vendor/lib/libarcsoft_night_shot.so|d882aa66e8b0ec9ec62631bb5a601ef55a53a0ab
-vendor/lib/libarcsoft_picselfie_algorithm.so|0608a376de3fd4aae771ec9379654a5cfcf1f08e
-vendor/lib/libarcsoft_smart_denoise.so|486a8c52bd4a66910bcbbf5d3f2dc37256a3c250
 
 # Camera (chromatix) - from 00WW_3_54H
 vendor/lib/libchromatix_s5k3p9sx_drg_front_2nd_common.so|13f534b013be6dd15b31239060ef8a8039db441b
@@ -358,7 +344,6 @@ vendor/lib/libmmcamera2_sensor_modules.so|76ebfecb5d5b19b3e157f8a5b4ed6242209d71
 vendor/lib/libmmcamera2_stats_algorithm.so;DISABLE_CHECKELF|6e4e3f924d697ae191b8d55814d16a24cca59cad
 vendor/lib/libmmcamera2_stats_lib.so;DISABLE_CHECKELF|724156e6ebe7d9c886570d18e872c1ca040ff80c
 vendor/lib/libmmcamera2_stats_modules.so;DISABLE_CHECKELF|7df22f31ac559e6eb5c913c006fa8ebb32f09c02
-vendor/lib/libmmcamera_arcsoftbokeh_lib.so|9c86b7af8d3a30dda56d54471d71c47880dc509e
 vendor/lib/libmmcamera_csidtg.so|fdf5fa72c78bb6cc02c59db9da0584e4c68e4911
 vendor/lib/libmmcamera_dbg.so|a482ba9d61eb153777dc782e4865f67981ad910e
 vendor/lib/libmmcamera_depth_map.so|ecb230a78ae4e61899141d75acf66ae4aa35a5f2
@@ -374,7 +359,6 @@ vendor/lib/libmmcamera_hvx_add_constant.so|960bb2387a793af68f3748802f3a0583dcdea
 vendor/lib/libmmcamera_hvx_grid_sum.so|222c0747dddba59fb41bcf8d4df16bd08dc71049
 vendor/lib/libmmcamera_imglib.so|2ce9c9a1c3dbbe71f016007cb019f8afbe116b0c
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so|9560871c0c94d2535dd1a270a1c01d6e14bbe7c8
-vendor/lib/libmmcamera_interface.so;DISABLE_CHECKELF|929d8ed834872bbb29fceb0943e00cf7c21c9e51
 vendor/lib/libmmcamera_isp_abf48.so|ed9c39272d4c71987f03eca413f3db66afc421d4
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so|c4b210ea9719223aad75031c11afdaa36cf42cd6
 vendor/lib/libmmcamera_isp_bf_stats47.so|c84825c6f944989195407c42b7dadbe4fd061428
