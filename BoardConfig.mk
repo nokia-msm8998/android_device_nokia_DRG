@@ -16,6 +16,10 @@
 
 DEVICE_PATH := device/nokia/DRG
 
+# Partitions
+BOARD_SUPER_PARTITION_SYSTEM_DEVICE_SIZE := 2684354560
+BOARD_SUPER_PARTITION_VENDOR_DEVICE_SIZE := 536870912
+
 # Inherit from nokia sdm660-common
 -include device/nokia/sdm660-common/BoardConfigCommon.mk
 
@@ -35,10 +39,6 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/nokia/DRG.config
-
-# Partitions
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2684354560
-BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
