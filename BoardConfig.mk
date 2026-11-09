@@ -49,5 +49,8 @@ TARGET_KERNEL_CONFIG += vendor/nokia/DRG.config
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Reserve
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 629145600
+
 # Inherit from the proprietary version
 include vendor/nokia/DRG/BoardConfigVendor.mk
